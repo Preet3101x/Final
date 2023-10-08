@@ -4,23 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advent Games</title>
-    <link rel="stylesheet" href="home.css" />
+    <style>
+      @font-face {
+        font-family: "TT Squares Regular";
+        src: url("TT%20Squares%20Regular.otf") format("opentype");
+      }
+
+      pre {
+        font-family: "TT Squares Regular", monospace;
+        font-size: 100px;
+        display: flex;
+        align-items: center;
+        color: antiquewhite;
+      }
+
+      @font-face {
+        font-family: "Minercraftory";
+        src: url("Minercraftory.ttf") format("truetype");
+      }
+
+      h1 {
+        font-family: "Minercraftory", monospace;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+
+        color: rgb(60, 110, 179);
+      }
+
+      body {
+        background-color: rgb(13, 11, 45);
+      }
+
+      nav {
+        background-color: rgb(60, 110, 179);
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: space-between; /* Distribute items evenly horizontally */
+      }
+
+      /* Style the logo image */
+      nav img {
+        width: 90px; /* Adjust the width as needed */
+        height: 90px; /* Maintain aspect ratio */
+      }
+
+      /* Style the navigation links container */
+      .nav-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Push links to the right */
+        flex-grow: 1; /* Allow the links to grow and take up available space */
+      }
+
+      /* Style the navigation links */
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-family: "Minercraftory", monospace;
+        margin-right: 20px; /* Add spacing between links */
+      }
+
+      /* Style the navigation links on hover */
+      .nav-links a:hover {
+        color: rgb(13, 11, 45);
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+      }
+
+      .center-container {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: 100vh; /* Make the container take the full height of the viewport */
+        color: antiquewhite; /* Text color for the centered content */
+      }
+
+      /* Style the <h1> element */
+      .center-container h1 {
+        font-family: "Minercraftory", monospace;
+        font-size: 25px;
+        color: rgb(60, 110, 179);
+        padding-top: 120px;
+      }
+
+      /* Style the <pre> element */
+      .center-container pre {
+        font-family: "TT Squares Regular", monospace;
+        font-size: 80px;
+        margin-bottom: 250px;
+        color: antiquewhite;
+      }
+
+      /* Style the button */
+      #button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: pink;
+        color: white;
+        font-family: "Minercraftory", monospace;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 50px; /* Create a rounded shape for an oval button */
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+
+      /* Add a hover effect for the button */
+      #button:hover {
+        background-color: rgb(60, 110, 179);
+        transform: scale(1.05); /* Increase button size on hover */
+      }
+    </style>
   </head>
   <body>
     <nav>
-      <a href="home.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Reviews</a>
-      <a href="team.html">Team</a>
-      <a href="#">Contact</a>
+      <img src="Advent Games-logos_white.png" alt="Advent Games Logo" />
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Reviews</a>
+        <a href="team.html">Team</a>
+        <a href="#">Contact</a>
+      </div>
     </nav>
-    <h1>ADVENT GAMES</h1>
-    <pre>
-            Your one-stop 
-            video game 
-            centre
-    </pre>
 
-    <a href="#">SHOP NOW</a>
+    <div class="center-container">
+      <h1>ADVENT GAMES</h1>
+      <pre>
+    Your one-stop
+    video game
+    center
+  </pre
+      >
+    </div>
+
+    <a href="page2.html" id="button">SHOP NOW</a>
   </body>
 </html>
