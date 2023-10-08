@@ -10,6 +10,12 @@
         src: url("TT%20Squares%20Regular.otf") format("opentype");
       }
 
+      pre,
+      h1,
+      .nav-links a {
+        margin: 0; /* Remove margin from pre, h1, and .nav-links a */
+      }
+
       pre {
         font-family: "TT Squares Regular", monospace;
         font-size: 100px;
@@ -28,13 +34,20 @@
         font-size: 25px;
         display: flex;
         align-items: center;
-        color: rgb(60, 110, 179);
+        color: rgb(245, 21, 114);
+        padding-top: 120px;
       }
 
       body {
         background-color: rgb(13, 11, 45);
-        margin: 0; /* Remove default body margin */
-        padding: 0; /* Remove default body padding */
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-image: url(pxfuel.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; /* Adjust the background size as needed */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed;
       }
 
       nav {
@@ -42,6 +55,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        /* Add padding to nav instead of margin */
       }
 
       /* Style the logo image */
@@ -64,7 +78,7 @@
         color: white;
         font-size: 18px;
         font-family: "Minercraftory", monospace;
-        margin-right: 20px; /* Add spacing between links */
+        margin-right: 20px;
       }
 
       /* Style the navigation links on hover */
@@ -80,23 +94,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 70vh;
         color: antiquewhite;
-      }
-
-      /* Style the <h1> element */
-      .center-container h1 {
-        font-family: "Minercraftory", monospace;
-        font-size: 25px;
-        color: rgb(60, 110, 179);
-        padding-top: 120px;
+        margin-bottom: 500px;
       }
 
       /* Style the <pre> element */
       .center-container pre {
         font-family: "TT Squares Regular", monospace;
         font-size: 80px;
-        margin-bottom: 250px;
+        margin-bottom: 0; /* Remove margin from pre */
         color: antiquewhite;
       }
 
@@ -104,7 +111,7 @@
       #button {
         display: inline-block;
         padding: 10px 20px;
-        background-color: pink;
+        background-color: rgb(245, 21, 114);
         color: white;
         font-family: "Minercraftory", monospace;
         font-size: 18px;
@@ -138,9 +145,9 @@
     Your one-stop
     video game
     center
-  </pre>
+  </pre
+      >
+      <a href="page2.html" id="button">SHOP NOW</a>
     </div>
-
-    <a href="page2.html" id="button">SHOP NOW</a>
   </body>
 </html>
