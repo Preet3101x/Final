@@ -28,34 +28,34 @@
         font-size: 25px;
         display: flex;
         align-items: center;
-
         color: rgb(60, 110, 179);
       }
 
       body {
         background-color: rgb(13, 11, 45);
+        margin: 0; /* Remove default body margin */
+        padding: 0; /* Remove default body padding */
       }
 
       nav {
         background-color: rgb(60, 110, 179);
         display: flex;
         align-items: center;
-        padding: 10px;
-        justify-content: space-between; /* Distribute items evenly horizontally */
+        justify-content: space-between;
       }
 
       /* Style the logo image */
       nav img {
-        width: 90px; /* Adjust the width as needed */
-        height: 90px; /* Maintain aspect ratio */
+        width: 90px;
+        height: 90px;
       }
 
       /* Style the navigation links container */
       .nav-links {
         display: flex;
         align-items: center;
-        justify-content: flex-end; /* Push links to the right */
-        flex-grow: 1; /* Allow the links to grow and take up available space */
+        justify-content: flex-end;
+        flex-grow: 1;
       }
 
       /* Style the navigation links */
@@ -77,11 +77,11 @@
 
       .center-container {
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Center items vertically */
-        align-items: center; /* Center items horizontally */
-        height: 100vh; /* Make the container take the full height of the viewport */
-        color: antiquewhite; /* Text color for the centered content */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: antiquewhite;
       }
 
       /* Style the <h1> element */
@@ -109,14 +109,14 @@
         font-family: "Minercraftory", monospace;
         font-size: 18px;
         text-decoration: none;
-        border-radius: 50px; /* Create a rounded shape for an oval button */
+        border-radius: 50px;
         transition: background-color 0.3s ease, transform 0.2s ease;
       }
 
       /* Add a hover effect for the button */
       #button:hover {
         background-color: rgb(60, 110, 179);
-        transform: scale(1.05); /* Increase button size on hover */
+        transform: scale(1.05);
       }
     </style>
   </head>
@@ -138,8 +138,7 @@
     Your one-stop
     video game
     center
-  </pre
-      >
+  </pre>
     </div>
 
     <a href="page2.html" id="button">SHOP NOW</a>
