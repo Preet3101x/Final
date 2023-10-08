@@ -8,10 +8,10 @@
      margin: 0;
  }
 
- @font-face {
-     font-family: "TT Squares Regular";
-     src: url("TT%20Squares%20Regular.otf") format("opentype");
- }
+@font-face {
+    font-family: "TT Squares Regular";
+    src: url("/font/TT\ Squares\ Regular.otf") format("opentype");
+}
 
  h1 {
      font-family: "TT Squares Regular", monospace;

@@ -4,7 +4,7 @@ body {
 
 @font-face {
     font-family: "TT Squares Regular";
-    src: url("TT%20Squares%20Regular.otf") format("opentype");
+    src: url("/font/TT\ Squares\ Regular.otf") format("opentype");
 }
 
 pre,
