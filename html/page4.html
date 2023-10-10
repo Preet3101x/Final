@@ -2,16 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advent Games</title>
     <style>
       @font-face {
         font-family: "TT Squares Regular";
-        src: url("/font/TT Squares Regular.otf")
-          format("opentype");
+        src: url("/font/TT Squares Regular.otf") format("opentype");
       }
       body {
         background-color: rgb(40, 39, 45);
@@ -31,12 +27,19 @@
         align-items: center;
       }
 
-      #image {
+      .image-container {
         width: 100%;
         max-width: 450px; /* Adjust the maximum width of the image */
-        padding-left:250px ;
+        padding-left: 250px;
+        position: relative;
       }
-      
+
+      #image {
+        width: 100%;
+        box-shadow: 0 0 20px rgb(37, 7, 234); /* Neon-style border */
+        border-radius: 10px; /* Rounded corners */
+        z-index: -1; /* Place it behind the image */
+      }
 
       pre {
         font-family: "TT Squares Regular", monospace;
@@ -61,11 +64,9 @@
   </head>
   <body>
     <div id="container">
-      <img
-        src="/images/strategy.jpg"
-        alt=""
-        id="image"
-      />
+      <div class="image-container">
+        <img src="/images/strategy.jpg" alt="" id="image" />
+      </div>
 
       <div>
         <pre id="heading">
@@ -79,7 +80,6 @@
           wits and skill vs NPCs and other
           players alike.
         </pre>
-        
       </div>
     </div>
   </body>

@@ -20,17 +20,25 @@
         overflow: hidden;
       }
 
-      #container {
+      .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px; /* Adjust the gap between image and text */
         align-items: center;
       }
 
-      #image {
+      .image-container {
         width: 100%;
         max-width: 500px; /* Adjust the maximum width of the image */
         padding-left: 250px;
+        position: relative;
+      }
+
+      .image {
+        width: 100%;
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* Neon-style border */
+        border-radius: 10px; /* Rounded corners */
+        z-index: -1; /* Place it behind the image */
       }
 
       pre {
@@ -38,32 +46,34 @@
         margin: 0;
       }
 
-      #heading {
+      .heading {
         color: rgb(70, 96, 222);
         font-weight: bolder;
         font-size: 3vw;
       }
 
-      #para {
+      .para {
         color: antiquewhite;
         font-size: 2vw;
       }
 
-      div {
+      .text-container {
         padding-right: 100px;
       }
     </style>
   </head>
   <body>
-    <div id="container">
-      <img src="/images/casual.jpg" alt="" id="image" />
+    <div class="container">
+      <div class="image-container">
+        <img src="/images/casual.jpg" alt="" class="image" />
+      </div>
 
-      <div>
-        <pre id="heading">
+      <div class="text-container">
+        <pre class="heading">
           CASUAL GAMES
         </pre>
 
-        <pre id="para">
+        <pre class="para">
           A collection of unique and quirky
           games to while away your day.
         </pre>

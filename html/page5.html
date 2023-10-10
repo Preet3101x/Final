@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Advent Games</title>
     <style>
       @font-face {
@@ -31,50 +28,54 @@
         align-items: center;
       }
 
-      #image {
+      .image-container {
         width: 100%;
         max-width: 500px; /* Adjust the maximum width of the image */
-        padding-left:250px ;
+        padding-left: 250px;
+        position: relative;
       }
-      
+
+      .image {
+        width: 100%;
+        box-shadow: 0 0 20px rgb(235, 0, 0); /* Neon-style border */
+        border-radius: 10px; /* Rounded corners */
+        z-index: -1; /* Place it behind the image */
+      }
 
       pre {
         font-family: "TT Squares Regular", monospace;
         margin: 0;
       }
 
-      #heading {
+      .heading {
         color: rgb(70, 96, 222);
         font-weight: bolder;
         font-size: 3vw;
       }
 
-      #para {
+      .para {
         color: antiquewhite;
         font-size: 2vw;
       }
 
-      div {
+      .text-container {
         padding-right: 100px;
       }
     </style>
   </head>
   <body>
     <div id="container">
-      <img
-        src="/images/rpg.jpg"
-        alt=""
-        id="image"
-      />
+      <div class="image-container">
+        <img src="/images/rpg.jpg" alt="" class="image" />
+      </div>
 
-      <div>
-        <pre id="heading">
+      <div class="text-container">
+        <pre class="heading">
           ROLE-PLAYING
           GAMES
-
         </pre>
 
-        <pre id="para">
+        <pre class="para">
           Lose yourself in exotic worlds
           where your mission is to
           save the day.
