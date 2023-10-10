@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Advent Games</title>
+    <style>
+      @font-face {
+        font-family: "TT Squares Regular";
+        src: url("/font/TT Squares Regular.otf")
+          format("opentype");
+      }
+      body {
+        background-color: rgb(40, 39, 45);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; /* Adjust the gap between image and text */
+        align-items: center;
+      }
+
+      #image {
+        width: 100%;
+        max-width: 300px; /* Adjust the maximum width of the image */
+        padding-left:250px ;
+      }
+      
+
+      pre {
+        font-family: "TT Squares Regular", monospace;
+        margin: 0;
+      }
+
+      #heading {
+        color: rgb(70, 96, 222);
+        font-weight: bolder;
+        font-size: 3vw;
+      }
+
+      #para {
+        color: antiquewhite;
+        font-size: 2vw;
+      }
+
+      div {
+        padding-right: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="/images/strategy.jpg"
+        alt=""
+        id="image"
+      />
+
+      <div>
+        <pre id="heading">
+          REAL TIME
+          STRATEGY 
+          GAMES
+        </pre>
+
+        <pre id="para">
+          Challenge yourself in a battle of
+          wits and skill vs NPCs and other
+          players alike.
+        </pre>
+        
+      </div>
+    </div>
+  </body>
+</html>
