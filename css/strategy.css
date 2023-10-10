@@ -1,0 +1,61 @@
+ @font-face {
+     font-family: "TT Squares Regular";
+     src: url("/font/TT Squares Regular.otf") format("opentype");
+ }
+
+ body {
+     background-color: rgb(40, 39, 45);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin: 0;
+     overflow: hidden;
+ }
+
+ #container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+     /* Adjust the gap between image and text */
+     align-items: center;
+ }
+
+ .image-container {
+     width: 100%;
+     max-width: 450px;
+     /* Adjust the maximum width of the image */
+     padding-left: 250px;
+     position: relative;
+ }
+
+ #image {
+     width: 100%;
+     box-shadow: 0 0 20px rgb(37, 7, 234);
+     /* Neon-style border */
+     border-radius: 10px;
+     /* Rounded corners */
+     z-index: -1;
+     /* Place it behind the image */
+ }
+
+ pre {
+     font-family: "TT Squares Regular", monospace;
+     margin: 0;
+ }
+
+ #heading {
+     color: rgb(70, 96, 222);
+     font-weight: bolder;
+     font-size: 3vw;
+ }
+
+ #para {
+     color: antiquewhite;
+     font-size: 2vw;
+ }
+
+ div {
+     padding-right: 100px;
+ }
