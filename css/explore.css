@@ -148,3 +148,41 @@ a:hover span:nth-child(4) {
     transition: 1s;
     transition-delay: 0.75s;
 }
+/* Navbar Styles */
+.navbar {
+    background-color: rgb(13, 11, 45);
+    display: flex;
+    justify-content: flex-end;
+    /* Align the content to the right */
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* Ensure the navbar is on top of other content */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Display the list items in a row */
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.navbar a:hover {
+    color: rgb(255, 255, 255);
+}

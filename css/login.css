@@ -1,0 +1,239 @@
+/* Set the HTML element to take up the full height of the viewport */
+html {
+    height: 100%;
+}
+
+/* Reset margin and padding for the body element */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* Use a sans-serif font for text */
+    background: linear-gradient(#57606f, #2f3542);
+    /* Apply a linear gradient background */
+}
+
+/* Style for the login box container */
+.login-box {
+    position: absolute;
+    /* Position the login box absolutely */
+    top: 50%;
+    /* Vertically center it */
+    left: 50%;
+    /* Horizontally center it */
+    width: 400px;
+    /* Set a fixed width */
+    padding: 40px;
+    /* Add padding */
+    transform: translate(-50%, -50%);
+    /* Center the box precisely */
+    background: rgba(0, 0, 0, .7);
+    /* Semi-transparent black background */
+    box-sizing: border-box;
+    /* Include padding and border in box sizing */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    /* Add a shadow for elevation */
+    border-radius: 10px;
+    /* Round the corners */
+}
+
+/* Style for the heading inside the login box */
+.login-box h2 {
+    margin: 0 0 30px;
+    /* Add margin below the heading */
+    padding: 0;
+    color: #fff;
+    /* White text color */
+    text-align: center;
+    /* Center-align the text */
+}
+
+/* Style for the user input fields and labels */
+.login-box .user-box {
+    position: relative;
+    /* Position the user box relatively for label positioning */
+}
+
+.login-box .user-box input {
+    width: 100%;
+    /* Take up full width */
+    padding: 10px 0;
+    /* Add padding to the input */
+    font-size: 16px;
+    /* Set font size */
+    color: #fff;
+    /* White text color */
+    margin-bottom: 30px;
+    /* Add margin at the bottom */
+    border: none;
+    /* Remove border */
+    border-bottom: 1px solid #fff;
+    /* Add a white bottom border */
+    outline: none;
+    /* Remove focus outline */
+    background: transparent;
+    /* Transparent background */
+}
+
+.login-box .user-box label {
+    position: absolute;
+    /* Position the label absolutely */
+    top: 0;
+    /* Place it at the top of the input */
+    left: 0;
+    /* Place it at the left of the input */
+    padding: 10px 0;
+    /* Add padding */
+    font-size: 16px;
+    /* Set font size */
+    color: #fff;
+    /* White text color */
+    pointer-events: none;
+    /* Disable pointer events for label */
+    transition: .5s;
+    /* Apply transition for smooth animation */
+}
+
+/* Animation for labels when input is focused or valid */
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    /* Move label up when input is focused or valid */
+    left: 0;
+    color: #03e9f4;
+    /* Change label color */
+    font-size: 12px;
+    /* Reduce label font size */
+}
+
+/* Style for the form link/button */
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+/* Style for the form link/button on hover */
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 100px #03e9f4;
+}
+
+/* Animation for the form link/button hover effect */
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+
+/* Animation for the first span of the button */
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+/* Keyframes animation for the first span of the button */
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+/* Animation for the second span of the button */
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+/* Keyframes animation for the second span of the button */
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+/* Animation for the third span of the button */
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+/* Keyframes animation for the third span of the button */
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+/* Animation for the fourth span of the button */
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+/* Keyframes animation for the fourth span of the button */
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@font-face {
+    font-family: "TT Squares Regular";
+    src: url("/font/TT\ Squares\ Regular.otf") format("opentype");
+}
+
+h2 {
+    font-family: "TT Squares Regular", sans-serif;
+}
